@@ -1,0 +1,90 @@
+@import "./variables.scss";
+
+@mixin shields {
+  border-radius: 4px;
+  height: 32px;
+  font-size: 14px;
+}
+
+@mixin search {
+  width: 479px;
+  height: 46px;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  padding: 4px 16px;
+  outline: 0;
+  outline-offset: 0;
+
+  &:hover,
+  :active,
+  :focus {
+    border: 1px solid $color-brand;
+  }
+}
+
+@mixin button {
+  height: 38px;
+  border-radius: 4px;
+  background-color: $white;
+  font-family: PTSans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.button {
+  @include button;
+  border: 1px solid $color-brand;
+  width: 75px;
+  color: $color-brand;
+
+  &:hover {
+    background-color: $color-brand;
+    color: $white;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.gap-36 {
+  gap: 36px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.h72 {
+  height: 72px;
+}
+
+.h268 {
+  height: 268px;
+}
+
+.h216 {
+  height: 216px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
